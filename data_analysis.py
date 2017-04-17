@@ -19,7 +19,7 @@ def main():
     packet, call clean_data() to apply a low pass filter to the data and
     finally plot the result."""
     x = np.linspace(-max, max, N)
-    y = noisy_packet(x, 5, 1, 2)
+    y = noisy_packet(x, 5, 1, .2)
 
     y_clean = clean_data(x, y)
 
